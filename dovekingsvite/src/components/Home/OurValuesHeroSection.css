@@ -1,0 +1,169 @@
+/* Container for the whole section */
+.our-values-hero-section.light {
+  background: linear-gradient(to bottom, #bfdbfe, #2563eb);
+  padding: 2rem;
+  color: #000; /* Light mode text color */
+}
+
+.our-values-hero-section.dark {
+  background: linear-gradient(to bottom, #1e3a8a, #1e40af);
+  padding: 2rem;
+  color: #fff; /* Dark mode text color */
+}
+
+/* Centered text styling */
+.text-center {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Hero title styling with underline */
+.hero-title {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.underline-title {
+  text-decoration: underline;
+}
+
+/* Subtitle styling */
+.hero-subtitle {
+  font-size: 1.25rem; /* xl */
+}
+
+/* Container for the cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Card styling */
+.card {
+  background: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.75rem; /* lg */
+  padding: 1.5rem;
+  max-width: 20rem;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.our-values-hero-section.dark .card {
+  background: #1f2937; /* Dark mode card background */
+  color: #e5e7eb; /* Dark mode text color */
+}
+
+/* Card hover effects */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive text styling */
+.card-number {
+  font-size: 1.5rem; /* 2xl */
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 1.25rem; /* xl */
+  font-weight: semibold;
+  margin-top: 1rem;
+}
+
+.card-description {
+  font-size: 1rem; /* base */
+  margin-top: 0.5rem;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+}
+
+.card.glow::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border: 2px solid rgba(173, 216, 230, 0.7);
+  border-radius: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  animation: glow-animation 2s ease-in-out infinite;
+}
+
+/* Call to action button */
+.cta-button {
+  background: #2563eb;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.cta-button:hover {
+  background: #1e3a8a;
+}
+
+.our-values-hero-section.dark .cta-button {
+  background: #3b82f6;
+}
+
+.our-values-hero-section.dark .cta-button:hover {
+  background: #2563eb;
+}
+
+/* Animation keyframes for the glowing ring */
+@keyframes glow-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Media queries for responsive text */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 1.5rem; /* 2xl */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem; /* lg */
+  }
+
+  .card-number {
+    font-size: 1.25rem; /* xl */
+  }
+
+  .card-title {
+    font-size: 1rem; /* lg */
+  }
+
+  .card-description {
+    font-size: 0.875rem; /* base */
+  }
+}
+
+/* Media query for stacking cards vertically on small screens */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

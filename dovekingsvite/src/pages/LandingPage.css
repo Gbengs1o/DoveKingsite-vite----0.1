@@ -1,0 +1,296 @@
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .light-mode {
+    background-color: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  .dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+  
+  .animated-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #60a5fa, #8b5cf6);
+    opacity: 0.2;
+    animation: pulse 4s infinite alternate;
+  }
+  
+  .grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.1;
+  }
+  
+  .abstract-element {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 0.2;
+  }
+  
+  .top-left {
+    top: -10%;
+    left: -10%;
+    width: 40vw;
+    height: 40vw;
+    background: linear-gradient(135deg, #f472b6, #ef4444);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .bottom-right {
+    bottom: -10%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: linear-gradient(135deg, #34d399, #3b82f6);
+    animation: float-reverse 8s ease-in-out infinite;
+  }
+  
+  .main-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+  
+  .audio-button {
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .audio-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .audio-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  }
+  
+  .audio-button.light {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .audio-button.light:hover {
+    background-color: #2563eb;
+  }
+  
+  .audio-button.dark {
+    background-color: #60a5fa;
+    color: #111827;
+  }
+  
+  .audio-button.dark:hover {
+    background-color: #3b82f6;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.3; }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes float-reverse {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+  }
+  
+  @media (max-width: 640px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .audio-button {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+
+
+
+  /* ... (previous CSS remains the same) ... */
+
+/* Add these new styles at the end of the file */
+/* ... (previous CSS remains the same) ... */
+
+/* ... (previous CSS remains the same) ... */
+
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .shape {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    animation: float-around 20s infinite ease-in-out;
+  }
+  
+  .light-mode .shape {
+    background: rgba(59, 130, 246, 0.1);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+  }
+  
+  .dark-mode .shape {
+    background: rgba(236, 72, 153, 0.1);
+    border: 2px solid rgba(236, 72, 153, 0.3);
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.2);
+  }
+  
+  .shape:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    top: 20%;
+    animation-delay: 0s;
+  }
+  
+  .shape:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    right: 15%;
+    top: 15%;
+    animation-delay: -5s;
+    animation-duration: 25s;
+  }
+  
+  .shape:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    bottom: 20%;
+    animation-delay: -10s;
+    animation-duration: 30s;
+  }
+  
+  .shape:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    right: 20%;
+    bottom: 30%;
+    animation-delay: -15s;
+    animation-duration: 22s;
+  }
+
+  
+  
+  .light-mode .shape:nth-child(odd) {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .light-mode .shape:nth-child(even) {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  
+  .dark-mode .shape:nth-child(odd) {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  
+  .dark-mode .shape:nth-child(even) {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  
+  @keyframes float-around {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(50px, 50px) rotate(90deg);
+    }
+    50% {
+      transform: translate(100px, -50px) rotate(180deg);
+    }
+    75% {
+      transform: translate(-50px, 100px) rotate(270deg);
+    }
+  }
+  
+  .light-mode .shape {
+    animation-name: float-around-light;
+  }
+  
+  .dark-mode .shape {
+    animation-name: float-around-dark;
+  }
+  
+  @keyframes float-around-light {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(50px, 50px) rotate(90deg) scale(1.1);
+    }
+    50% {
+      transform: translate(100px, -50px) rotate(180deg) scale(1);
+    }
+    75% {
+      transform: translate(-50px, 100px) rotate(270deg) scale(0.9);
+    }
+  }
+  
+  @keyframes float-around-dark {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg) skew(0deg);
+    }
+    25% {
+      transform: translate(50px, 50px) rotate(90deg) skew(5deg);
+    }
+    50% {
+      transform: translate(100px, -50px) rotate(180deg) skew(0deg);
+    }
+    75% {
+      transform: translate(-50px, 100px) rotate(270deg) skew(-5deg);
+    }
+  }

@@ -1,0 +1,6 @@
+/* src/assets/homepage/Parallax.css */
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}

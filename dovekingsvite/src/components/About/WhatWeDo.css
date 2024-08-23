@@ -1,0 +1,82 @@
+/* Centralized Logo */
+.logo-container {
+  width: 8rem;
+  height: 8rem;
+  background-color: #87cefa; /* Light blue color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto; /* Center the logo and add margin */
+}
+
+.logo {
+  width: 6rem;
+  height: 6rem;
+}
+
+/* Content Section */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d3748; /* text-gray-800 */
+  text-decoration: underline;
+  margin-bottom: 0.5rem; /* Reduce bottom margin */
+}
+
+.subheader {
+  font-size: 1.75rem;
+  color: #718096; /* text-gray-600 */
+  margin-bottom: 0.5rem; /* Reduce bottom margin */
+}
+
+.content {
+  font-size: 1rem;
+  color: #718096; /* text-gray-600 */
+  max-width: 40rem;
+  margin: 0 auto; /* Center content */
+}
+
+/* Button */
+.switch-button {
+  background-color: #4299e1; /* bg-blue-500 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* Fully rounded */
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.switch-button:hover {
+  background-color: #2b6cb0; /* bg-blue-700 */
+}
+
+/* Dark Mode Styles */
+.dark-switch-button {
+  background-color: #1a202c; /* bg-gray-800 */
+  color: #f7fafc; /* text-gray-100 */
+}
+
+.dark-switch-button:hover {
+  background-color: #2d3748; /* bg-gray-700 */
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  .title {
+      font-size: 2rem;
+  }
+
+  .subheader {
+      font-size: 1.5rem;
+  }
+
+  .content {
+      font-size: 0.875rem;
+      max-width: 90%;
+  }
+
+  .switch-button {
+      padding: 0.5rem;
+  }
+}

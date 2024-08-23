@@ -1,0 +1,235 @@
+/* Base styles */
+body {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for better contrast */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Filter controls */
+  .filter-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-input {
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 0.25rem;
+    background: #1f1f1f;
+    color: #e0e0e0;
+    width: 100%;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .filter-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #333;
+    color: #e0e0e0;
+  }
+  
+  .filter-button.active {
+    background-color: #4a90e2;
+    color: #ffffff;
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    background: #1f1f1f;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .blog-card-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  
+  .category-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: #4a90e2;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0 0 0 0.5rem;
+  }
+  
+  .blog-card-content {
+    padding: 1.5rem;
+  }
+  
+  .blog-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-card-excerpt {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #999;
+  }
+  
+  .blog-card-meta-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .blog-card-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .cta-button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #357ab8;
+  }
+  
+  /* Featured Post */
+  .featured-post {
+    background: linear-gradient(135deg, #6e1f8f, #2d46b9);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .featured-post:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .featured-post-content {
+    display: flex;
+  }
+  
+  .featured-post-image-wrapper {
+    flex-shrink: 0;
+  }
+  
+  .featured-post-image {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .featured-post-details {
+    padding: 2rem;
+  }
+  
+  .featured-post-category {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .featured-post-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .featured-post-excerpt {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .featured-post-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+  }
+  
+  .featured-post-meta-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .featured-post-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* Load More Button */
+  .load-more-container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .load-more-button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .load-more-button:hover {
+    background-color: #357ab8;
+  }
+  
+  .arrow-icon {
+    margin-left: 0.5rem;
+  }
+  

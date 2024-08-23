@@ -1,0 +1,29 @@
+/* ChatModeComponent.css */
+
+.chat-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .chat-message {
+    margin-bottom: 15px;
+  }
+  
+  .user-message {
+    text-align: right;
+    color: #007bff;
+  }
+  
+  .ai-message {
+    text-align: left;
+    color: #28a745;
+  }
+  
+  .chat-panel {
+    height: 400px;
+    overflow-y: auto;
+  }
+  

@@ -1,0 +1,7 @@
+/* destyl.css */
+.parallax-bg {
+  background-image: url('/path-to-your-image/your-background-image.jpg'); /* Adjust the path as needed */
+  filter: blur(8px); /* Optional: Adjust the blur level */
+  transform: scale(1.1); /* Optional: Slight zoom effect for more depth */
+  background-attachment: fixed; /* Parallax effect */
+}

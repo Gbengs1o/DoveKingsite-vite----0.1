@@ -1,0 +1,31 @@
+/* Default styles (for wider screens) */
+.lottie-player {
+  width: 800px;
+  height: 200px;
+}
+
+/* Media query for mobile view (width less than 768px) */
+@media (max-width: 767px) {
+  .lottie-player {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/* Background color for light and dark mode */
+.hero-background {
+  background-color: #f0f0f0; /* Light mode background color */
+}
+
+/* Dark mode styles */
+body.dark-mode .hero-background {
+  background-color: #2c2c2c; /* Dark mode background color */
+}
+
+body.dark-mode .join-us-hero-section .fade-text {
+  color: #f0f0f0; /* Light text color for dark mode */
+}
+
+body.dark-mode .join-us-hero-section .underline-text {
+  text-decoration-color: #bbbbbb; /* Light underline for dark mode */
+}
